@@ -8,7 +8,7 @@ function DisplayMovies() {
   //   const [movie, setMovies] = useState([]);
   const [SearchQuery, setSearchQuery] = useState("");
   const dispatch = useDispatch();
-  const movie = useSelector((state: any) => {
+  const movie = useSelector((state:any) => {
     // console.log(state);
     return state.movieSlice.movie;
   });
