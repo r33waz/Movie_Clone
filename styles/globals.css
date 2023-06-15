@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    height: 7vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.header ul {
+    margin: 0 0 0 150px;
+    display: flex;
+    color:rgb(44, 110, 180)
+}
+
+.header ul button{
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 9px 0 0 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.movie{
+    width: 73%;
+    height:50%;
+    margin: -593px 0 0 400px;
+    padding: 15px 15px 0 15px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+/* https://api.themoviedb.org/3/genre/movie/list?language=en */
+.select{
+    width: 85%;
+    height: 15%;
+    margin: 25px 0 0 20px;
+    padding: 0 0 0 15px;
+    color: grey;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
