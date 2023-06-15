@@ -87,20 +87,20 @@ function DisplayMovies() {
   }
 
   ///
-  async function DisplayPeople() {
-    try {
-      const response = await axios.get(
-        "https://api.themoviedb.org/3/trending/person/day?language=en-US&api_key=a137f8300a702353890226d02aecf679",
-        {
-          headers: {
-            Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMTM3ZjgzMDBhNzAyMzUzODkwMjI2ZDAyYWVjZjY3OSIsInN1YiI6IjY0NzVjODVjOTYzODY0MDEzNTNmZjA4ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.A-l4hV785F23vFW1hXuS6kZW31hziSXeBNMA-M60Gdk",
-          },
-        }
-      );
-      dispatch(setMovies(response.data.results));
-    } catch (error) {}
-  }
+  // async function DisplayPeople() {
+  //   try {
+  //     const response = await axios.get(
+  //       "https://api.themoviedb.org/3/trending/person/day?language=en-US&api_key=a137f8300a702353890226d02aecf679",
+  //       {
+  //         headers: {
+  //           Authorization:
+  //             "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMTM3ZjgzMDBhNzAyMzUzODkwMjI2ZDAyYWVjZjY3OSIsInN1YiI6IjY0NzVjODVjOTYzODY0MDEzNTNmZjA4ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.A-l4hV785F23vFW1hXuS6kZW31hziSXeBNMA-M60Gdk",
+  //         },
+  //       }
+  //     );
+  //     dispatch(setMovies(response.data.results));
+  //   } catch (error) {}
+  // }
 
   //Find genera of movie
   const [short, setShort] = useState('')
@@ -146,7 +146,7 @@ function DisplayMovies() {
         <ul>
           <button onClick={DisplayMovie}>Movies</button>
           <button onClick={DisplayTVshows}>TV Shows</button>
-          <button onClick={DisplayPeople}>People</button>
+          {/* <button onClick={DisplayPeople}>People</button> */}
           <button>More</button>
         </ul>
       </div>
